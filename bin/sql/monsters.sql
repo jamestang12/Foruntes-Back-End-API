@@ -1,7 +1,7 @@
 CREATE TABLE monsters(
     id serial,
     name character varying(50),
-    personality varying(50)
+    personality character varying(50)
 );
 
 CREATE TABLE habitats(
@@ -12,7 +12,7 @@ CREATE TABLE habitats(
 );
 
 CREATE TABLE lives(
-    moster character varying(50),
+    monster character varying(50),
     habitat character varying(50)
 );
 
