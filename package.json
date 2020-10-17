@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "configure": "./bin/configuredb.sh"
+    "configure": "./bin/configuredb.sh",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "expres": "0.0.5",
+    "express": "^4.17.1",
     "pg": "^8.4.1"
   }
 }
