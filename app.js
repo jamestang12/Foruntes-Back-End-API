@@ -1,12 +1,12 @@
 const express = require("express");
 const bodyParser = require('body-parser');
-const monsters = require('./routes/monsters');
 const app = express();
+const routes = require('./routes');
 
 
 app.use(bodyParser.json());
+app.use('/', routes);
 
-app.use('/monsters', monsters)
 
 app.use((err, req,res, next) => {
     res.json(err);
